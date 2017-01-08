@@ -1,0 +1,4 @@
+# UMICH
+Host caen
+	HostName login.engin.umich.edu
+	User iamttc
