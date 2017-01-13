@@ -13,7 +13,10 @@ export PS2="$green>>> $end"
 export PATH=$PATH:$HOME/Library/Python/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin
 
 # aliases
-alias tasqer="~/Google\ Drive/web-dev/node/tasqer"
+alias dot="cd ~/Google\ Drive/dotfiles"
+alias tasqer="cd ~/Google\ Drive/web-dev/node/tasqer"
+alias 485="cd ~/Google\ Drive/school/eecs485/485project1"
+alias 388="cd ~/Google\ Drive/school/eecs388/project1"
 
 # functions
 dm(){
