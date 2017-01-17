@@ -22,6 +22,3 @@ alias 388="cd ~/Google\ Drive/school/eecs388/project1"
 dm(){
 	eval $(docker-machine env $1)
 }
-open(){
-	open -a Atom $1
-}
