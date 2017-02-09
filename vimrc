@@ -10,6 +10,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
 
 " end vundle plugin manager
 call vundle#end()
@@ -28,11 +29,12 @@ set number			    " line numbers
 set showmatch		    " highlight matching braces
 set splitright          " open vertical split right
 set splitbelow          " open horizontal split below
+set nofoldenable        " disable code folding
 set fillchars+=vert:\   " vertical split remove |
 
 " Use ctrl-[hjkl] to select the active split
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-l> :wincmd l<CR>
+nmap <silent> <up> :wincmd k<CR>
+nmap <silent> <down> :wincmd j<CR>
+nmap <silent> <left> :wincmd h<CR>
+nmap <silent> <right> :wincmd l<CR>
 
