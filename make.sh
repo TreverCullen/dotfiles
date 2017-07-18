@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# variables
-dir="$HOME/Google Drive/dotfiles"       # dotfiles directory
-files="bash_profile vimrc ssh"    		# list of files/folders to symlink in homedir
+# dotfiles directory
+dir="$HOME/dotfiles"
+ # list of files/folders to symlink in homedir
+files="bash_profile vimrc ssh git-completion.bash"
 
 # symlinks
 for file in $files; do

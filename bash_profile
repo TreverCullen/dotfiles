@@ -11,15 +11,9 @@ export PS1="$blue\@ $green\u$purple \w $red\$( git branch 2>/dev/null | grep '^*
 export PS2="$green>>> $end"
 
 # path
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+source ~/.git-completion.bash
+export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$PATH:$HOME/Library/Python/2.7/bin:/Library/Frameworks/Python.framework/Versions/3.5/bin
 
-# aliases
-alias dot="cd ~/Google\ Drive/dotfiles"
-alias tasqer="cd ~/Google\ Drive/web-dev/node/tasqer"
-alias 485="cd ~/Google\ Drive/school/eecs485"
-alias 388="cd ~/Google\ Drive/school/eecs388"
-
-# functions
-dm(){
-	eval $(docker-machine env $1)
-}
